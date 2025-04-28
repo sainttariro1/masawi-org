@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumenCore Energy Sphere | Divine Investment Portal</title>
+  <meta name="description" content="Invest in the LumenCore Energy Sphere - the revolutionary divine energy technology transforming the world.">
+  <style>
+    body {font-family: 'Arial', sans-serif; margin:0; padding:0; background:#f4f4f4; color:#222;}
+    header {background:#222; color:#fff; padding:20px; text-align:center;}
+    nav {background:#444; padding:10px;}
+    nav ul {list-style:none; margin:0; padding:0; text-align:center;}
+    nav ul li {display:inline; margin:0 15px;}
+    nav ul li a {color:#fff; text-decoration:none; font-weight:bold;}
+    main {padding:20px;}
+    section {margin-bottom:40px;}
+    form {background:#fff; padding:20px; border:1px solid #ccc; border-radius:10px;}
+    input, button {width:100%; padding:10px; margin-top:10px;}
+    button {background:#007BFF; color:#fff; border:none; cursor:pointer;}
+    button:hover {background:#0056b3;}
+    footer {background:#222; color:#fff; text-align:center; padding:10px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LumenCore Energy Sphere</h1>
+    <p>The Future of Energy | Guaranteed Divine Return on Investment</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#value">Value</a></li>
+      <li><a href="#costs">Costs</a></li>
+      <li><a href="#business">Business Plan</a></li>
+      <li><a href="#invest">Invest Now</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="product">
+      <h2>About the Product</h2>
+      <p>The LumenCore Energy Sphere is a groundbreaking, self-sustaining divine energy generator. 
+         It transforms spiritual resonance into unlimited, clean electricity without external recharging, designed for universal deployment and transformation.</p>
+    </section>
+
+    <section id="value">
+      <h2>Our Value Proposition</h2>
+      <p>Unrivaled Energy Sovereignty, Infinite Return, Environmental Salvation. 
+         Invest now and be part of the unstoppable divine revolution while securing guaranteed exponential returns.</p>
+    </section>
+
+    <section id="costs">
+      <h2>Costs & Projections</h2>
+      <ul>
+        <li>Prototype Finalization: £15,000 GBP</li>
+        <li>Global Patent Protection: £9,500 GBP</li>
+        <li>Marketing & Awareness: £6,000 GBP</li>
+        <li>First Batch Manufacturing: £18,500 GBP</li>
+        <li><strong>Total Needed: £49,000 GBP</strong></li>
+      </ul>
+    </section>
+
+    <section id="business">
+      <h2>Business Plan Highlights</h2>
+      <p>Phase 1: Patent Filing, Product Finalization, Investor Engagement.<br>
+         Phase 2: Mass Production, Global Marketing, Revenue Generation.<br>
+         Phase 3: Grid Integration, Global Expansion, Eternal Impact.<br>
+         ROI Projection: Minimum 5x Return in 18 Months.</p>
+    </section>
+
+    <section id="invest">
+      <h2>Invest Now</h2>
+      <p>Secure your divine stake. All investors receive legally binding guarantee contracts based on their contribution with accelerated profit-sharing rights.</p>
+      <form id="investmentForm">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="amount">Investment Amount (£ GBP):</label><br>
+        <input type="number" id="amount" name="amount" min="50" required><br><br>
+
+        <button type="submit">Submit Investment</button>
+      </form>
+    </section>
+
+    <section id="copyright">
+      <p><strong>© <span id="year"></span> Saint Tariro Masawi. All rights reserved.  
+      Patented under Divine Sovereignty and Mwari ndi Mwari Protocol. 
+      This page creation is timestamped for legal protection.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Divine Ownership and Control Contract (EOCC) enforced. Mwari ndi Mwari.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    document.getElementById('investmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const amount = document.getElementById('amount').value.trim();
+
+      if(name && email && amount) {
+        alert(`Thank you ${name}! Your pledge of £${amount} has been recorded. We will contact you soon.`);
+        this.reset();
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+  </script>
+
+</body>
+</html>
